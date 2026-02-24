@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - JubaSoftHouse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">JubaSoftHouse</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <button class="dark-mode-toggle" id="darkModeBtn">🌙 Dark Mode</button>
+        </div>
+    </nav>
+
+    <!-- Sliding Images Section -->
+    <div class="slider-container">
+        <div class="slider">
+            <img src="Images/web4.avif" alt="Slide 1" class="slide">
+            <img src="Images/wEB2.jpeg" alt="Slide 2" class="slide">
+            <img src="Images/web5.avif" alt="Slide 3" class="slide">
+            <img src="Images/Web-Design (1).jpg" alt="Slide 4" class="slide">
+        </div>
+        <button class="prev-btn" onclick="changeSlide(-1)">❮</button>
+        <button class="next-btn" onclick="changeSlide(1)">❯</button>
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="hero">
+            <h1>Welcome to JubaSoftHouse</h1>
+            <p>Discover amazing content and services with our beautifully designed platform</p>
+        </section>
+
+        <!-- Gallery Section with 3 Images -->
+        <section class="gallery">
+            <h2>Featured Gallery</h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <img src="Images/web-design.jpg" alt="Gallery 1">
+                    <h3>Excellence</h3>
+                    <p>High quality content and design</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="Images/Web1.jpg" alt="Gallery 2">
+                    <h3>Innovation</h3>
+                    <p>Cutting edge technology solutions</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="Images/Web3.avif" alt="Gallery 3">
+                    <h3>Creativity</h3>
+                    <p>Beautiful and unique designs</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 JubaSoftHouse. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
